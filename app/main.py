@@ -62,3 +62,4 @@ def explain_query_stream(request: ExplainRequest):
         return results
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+        

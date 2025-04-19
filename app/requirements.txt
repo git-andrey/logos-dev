@@ -1,0 +1,6 @@
+openai
+psycopg[binary,pool]
+python-dotenv
+fastapi
+uvicorn
+chromadb

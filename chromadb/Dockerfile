@@ -21,5 +21,5 @@ EXPOSE 8000
 # Start ChromaDB server
 CMD ["chroma", "run", "--path", "/data/chroma", "--host", "0.0.0.0", "--port", "8000"]
 
-# docker build -t chromadb-server .
-# docker run -d -p 8000:8000 -v /chroma:/data/chroma --name chromadb chromadb-server
+docker build -t chromadb-server .
+docker run -d -p 8000:8000 -v /chroma:/data/chroma --name chromadb chromadb-server    

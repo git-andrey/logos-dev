@@ -22,7 +22,7 @@ class StreamEmbeddingManager:
             api_key=os.getenv("CHROMA_API_KEY"))
         # alternative to using the remote solution we could include the chroma
         # database in the actual docker container and access it like this:
-        #self.chroma_client = chromadb.PersistentClient(path="./chroma")
+        # self.chroma_client = chromadb.PersistentClient(path="./chroma")
 
         self.collection_name = "satori"
 
